@@ -19,9 +19,11 @@ a {
 }
 .global-nav {
   height: 44px;
+  padding: 0 1rem;
 }
 .local-nav {
   height: 52px;
+  padding: 0 1rem;
   border-bottom: 1px solid #ddd;
 }
 .global-nav-links,
@@ -45,4 +47,39 @@ a {
 }
 .local-nav-links a:not(.product-name) {
   margin: 0 0 0 2em;
+}
+.scroll-section {
+  padding: 50vh 0 0 0;
+}
+#scroll-section-0 h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+.main-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* 현재 font-size의 3배높이 */
+  height: 3em;
+  font-size: 2.5rem;
+}
+.main-message p {
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.description {
+  padding: 0 1em;
+  font-size: 1.2rem;
+  color: #888;
+}
+
+.description strong {
+  float: left;
+  /* 현재 컨텍스트에서 font-size에 대한 비율을 사용한다. */
+  margin: 0 0.2em 0 0;
+  /* 3rem의 2배 -> 편리함 */
+  font-size: 3rem;
+  color: rgb(29, 29, 31);
 }
